@@ -1,0 +1,61 @@
+{
+  "options": {
+    "ver": "1.0.0",
+    "inspectConflicts": false,
+    "semicolons": true,
+    "freeze": [],
+    "ts": false
+  },
+  "app": {
+    "environmentsAllowingSeedData": "",
+    "seedData": false,
+    "name": "chat-system",
+    "description": "for chatting",
+    "src": "src",
+    "packager": "npm@>= 3.0.0",
+    "providers": [
+      "rest",
+      "socketio"
+    ]
+  },
+  "services": {
+    "user": {
+      "name": "user",
+      "nameSingular": "user",
+      "subFolder": "",
+      "fileName": "user",
+      "adapter": "mongoose",
+      "path": "/user",
+      "isAuthEntity": false,
+      "graphql": false
+    },
+    "contact": {
+      "name": "contact",
+      "nameSingular": "contact",
+      "subFolder": "",
+      "fileName": "contact",
+      "adapter": "mongoose",
+      "path": "/contact",
+      "isAuthEntity": false,
+      "graphql": false
+    },
+    "group": {
+      "name": "group",
+      "nameSingular": "group",
+      "subFolder": "",
+      "fileName": "group",
+      "adapter": "mongoose",
+      "path": "/group",
+      "isAuthEntity": false,
+      "graphql": false
+    }
+  },
+  "hooks": {},
+  "connections": {
+    "mongoose": {
+      "database": "mongodb",
+      "adapter": "mongoose",
+      "connectionString": "mongodb://localhost:27017/chat_system"
+    }
+  }
+}
