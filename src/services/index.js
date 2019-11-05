@@ -2,7 +2,7 @@
 // Configure the Feathers services. (Can be re-generated.)
 let contact = require('./contact/contact.service');
 let group = require('./group/group.service');
-let user = require('./user/user.service');
+let users = require('./users/users.service');
 
 // !code: imports // !end
 // !code: init // !end
@@ -11,7 +11,7 @@ let user = require('./user/user.service');
 let moduleExports = function (app) {
   app.configure(contact);
   app.configure(group);
-  app.configure(user);
+  app.configure(users);
   // !code: func_return // !end
 };
 

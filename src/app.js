@@ -21,6 +21,7 @@ const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 const generatorSpecs = require('../feathers-gen-specs.json');
+const authentication = require('./authentication');
 
 const mongoose = require('./mongoose');
 // !code: imports // !end
@@ -76,6 +77,8 @@ app.configure(mongoose);
 
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
+// Configure authentication (see `authentication.js`)
+app.configure(authentication);
 // Set up our services (see `services/index.js`)
 app.configure(services);
 // Set up event channels (see channels.js)

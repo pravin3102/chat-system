@@ -1,6 +1,7 @@
 
 // Hooks for service `group`. (Can be re-generated.)
 const commonHooks = require('feathers-hooks-common');
+const { authenticate } = require('@feathersjs/authentication').hooks;
 // !code: imports // !end
 
 // !<DEFAULT> code: used
@@ -15,7 +16,7 @@ const { create, update, patch, validateCreate, validateUpdate, validatePatch } =
 let moduleExports = {
   before: {
     // !<DEFAULT> code: before
-    all: [],
+    all: [ authenticate('jwt') ],
     find: [],
     get: [],
     create: [],
