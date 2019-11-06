@@ -24,6 +24,7 @@ let moduleExports = merge({},
     },
     phone: {
       type: DataTypes.REAL,
+      unique: true,
       allowNull: false
     },
     password: {

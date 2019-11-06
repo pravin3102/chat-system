@@ -19,7 +19,8 @@ let moduleExports = merge({},
       type: Number,
       match: "^[0-9]{10}$",
       minLength: 10,
-      required: true
+      required: true,
+      unique: true
     },
     password: {
       type: String,

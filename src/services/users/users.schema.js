@@ -20,7 +20,9 @@ let schema = {
   ],
   // Fields with unique values.
   uniqueItemProperties: [
-    // !code: schema_unique // !end
+    // !code: schema_unique
+    'phone'
+    // !end
   ],
 
   // Fields in the model.
@@ -31,9 +33,7 @@ let schema = {
     },
     name: {
       type: 'string',
-      example: 'pravin',
-      minLength: 3,
-      maxLength: 15
+      example: 'pravin'
     },
     phone: {
       type: 'number',

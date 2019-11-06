@@ -21,7 +21,9 @@ let base = merge({},
       "phone",
       "password"
     ],
-    uniqueItemProperties: [],
+    uniqueItemProperties: [
+      "phone"
+    ],
     properties: {
       id: {
         type: ID

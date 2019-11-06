@@ -59,6 +59,17 @@
       "isAuthEntity": true,
       "requiresAuth": true,
       "graphql": false
+    },
+    "upload": {
+      "name": "upload",
+      "nameSingular": "upload",
+      "subFolder": "",
+      "fileName": "upload",
+      "adapter": "mongoose",
+      "path": "/upload",
+      "isAuthEntity": false,
+      "requiresAuth": false,
+      "graphql": false
     }
   },
   "hooks": {},
