@@ -2,7 +2,7 @@
 // Initializes the `users` service on path `/users`. (Can be re-generated.)
 const createService = require('feathers-mongoose');
 const createModel = require('../../models/users.model');
-const hooks = require('./users.hooks');
+const hooks = require('./users.hooks').default;
 // !code: imports // !end
 // !code: init // !end
 
